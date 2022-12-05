@@ -41,16 +41,23 @@ pencil.addEventListener("click", () => {
   // true => show, false -> hide
   pencilFlag = !pencilFlag;
 
-  if (pencilFlag) pencilTool.style.display = "block";
-  else pencilTool.style.display = "none";
+  if (pencilFlag) {
+    pencilTool.style.display = "block";
+    eraserTool.style.display = "none";
+    eraserFlag = false;
+  } else pencilTool.style.display = "none";
 });
 
 eraser.addEventListener("click", () => {
   // true => show, false -> hide
   eraserFlag = !eraserFlag;
 
-  if (eraserFlag) eraserTool.style.display = "flex";
-  else eraserTool.style.display = "none";
+  if (eraserFlag) {
+    eraserTool.style.display = "flex";
+    pencilTool.style.display = "none";
+    pencilFlag = false;
+  } else eraserTool.style.display = "none";
+  pencilFlag = false;
 });
 
 upload.addEventListener("click", () => {

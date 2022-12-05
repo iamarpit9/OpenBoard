@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Open Board</title>
+  </head>
+  <body>
+    <div class="options-cont">
+      <i class="fa-solid fa-times"></i>
+    </div>
+    <div class="tools-cont scale-tools">
+      <img src="./icons/pencil.svg" alt="pencil" class="fa-solid fa-pencil" >
+      <img src="./icons/eraser.svg" alt="eraser" class="fa-solid fa-eraser">
+      <img src="./icons//download.svg" alt="download" class="fa-solid fa-download">
+      <img src="./icons//upload.svg" alt="upload" class="fa-solid fa-upload">
+      <img src="./icons/sticky.svg" alt="sticky" class="fa-solid fa-note-sticky">
+      <img src="./icons/redo.svg" alt="redo" class="fa-solid fa-rotate-right">
+      <img src="./icons/undo.svg" alt="undo" class="fa-solid fa-rotate-left">
+    </div>
+
+    <div class="pencil-tool">
+      <div class="pencil-width">
+        <input type="range" min="2" max="10" value="3" class="penWidth" />
+      </div>
+
+      <div class="pencil-color-cont">
+        <div class="black pencil-color"></div>
+        <div class="red pencil-color"></div>
+        <div class="blue pencil-color"></div>
+      </div>
+    </div>
+
+    <div class="eraser-tool">
+      <div class="eraser-width">
+        <input type="range" min="2" max="10" value="3" class="erasWidth" />
+      </div>
+    </div>
+    <canvas></canvas>
+
+    <script
+      src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+      integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let socket = io.connect("http://localhost:5000");
+    </script>
+    <script src="tools.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>

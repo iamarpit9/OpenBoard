@@ -43,7 +43,7 @@ body {
 
 @keyframes scale-tools {
   0% {
-    transform: scale(0.1);
+    transform: scale(0.5);
   }
 
   100% {
@@ -60,7 +60,6 @@ body {
   display: none;
   height: 5rem;
   width: 7rem;
-  background-color: green;
   position: absolute;
   top: 9.1rem;
   left: 25vw;
@@ -110,7 +109,6 @@ body {
   display: none;
   height: 2rem;
   width: 7rem;
-  background-color: green;
   position: absolute;
   top: 9.1rem;
   left: 33vw;
@@ -159,7 +157,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.note-cont textarea{
+.note-cont textarea {
   height: 100%;
   width: 100%;
   outline: none;
@@ -167,7 +165,7 @@ body {
   resize: none;
 }
 
-.note-cont img{
-    height: 100%;
+.note-cont img {
+  height: 100%;
   width: 100%;
 }
