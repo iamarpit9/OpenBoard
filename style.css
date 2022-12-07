@@ -34,6 +34,7 @@ body {
   left: 25vw;
   font-size: 3rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  
 }
 
 .scale-tools {
@@ -168,4 +169,191 @@ body {
 .note-cont img {
   height: 100%;
   width: 100%;
+}
+
+/* For small devices */
+
+@media screen and (max-width: 320px) {
+
+  .options-cont{
+    height: 2.5rem;
+    width: 2.5rem;
+    top: 25px;
+  }
+
+  .tools-cont{
+left: 20px;
+top: 100px;
+width: 280px;
+  }
+
+  .tools-cont img{
+    width: 2.1rem;
+  }
+
+  .pencil-tool{
+ width: 4rem;
+height: 4rem;
+top: 11.4rem;
+left: 8vw;
+  }
+
+  .pencil-tool input{
+    width: 2.8rem;
+  }
+
+  .pencil-color {
+  width: 1rem;
+  height: 1rem;
+}
+
+.pencil-color-cont {
+  height: 35px;
+ 
+  gap: 5px;
+}
+
+.eraser-tool{
+  width: 4rem;
+height: 3rem;
+top: 11.4rem;
+left: 14vw;
+}
+
+.eraser-tool input{
+      width: 2.8rem;
+
+}
+
+.sticky-cont {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.header-cont {
+  height: 1.5rem;
+
+}
+
+.header-cont > * {
+  height: 1rem;
+  width: 1rem;
+}
+
+}
+
+
+
+/* For medium devices */
+
+@media screen and (min-width: 576px) {
+
+    .options-cont{
+    height: 3rem;
+    width: 3rem;
+  }
+
+    .tools-cont img{
+    width: 2.8rem;
+  }
+
+ .tools-cont{
+  padding: 5px;
+ }
+.pencil-tool {
+  height: 4rem;
+  width: 6rem;
+  
+}
+
+.pencil-color-cont{
+  gap: 6px;
+}
+
+.eraser-tool {
+  width: 5rem;
+  left: 30vw;
+}
+
+.sticky-cont {
+  width: 10rem;
+  height: 10rem;
+}
+
+}
+
+/* For large devices */
+
+@media screen and (min-width: 992px) {
+
+  .options-cont {
+  height: 4rem;
+  width: 4rem;
+
+  top: 4rem;
+  left: 2rem;
+
+}
+
+.tools-cont {
+  height: 5rem;
+  width: 60vw;
+  top: 4rem;
+  left: 25vw;
+}
+
+.pencil-tool {
+  height: 5rem;
+  width: 7rem;
+  top: 9.1rem;
+  left: 25vw;
+}
+
+.pencil-width {
+  height: 2rem;
+
+}
+
+.pencil-width input {
+  width: 80%;
+}
+
+.pencil-color-cont {
+  height: calc(100% - 2rem);
+  gap: 1rem;
+}
+
+.pencil-color {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.eraser-tool {
+  height: 2rem;
+  width: 7rem;
+top: 9.1rem;
+  left: 33vw;
+}
+
+.eraser-tool input {
+  width: 80%;
+}
+
+.sticky-cont {
+  width: 15rem;
+  height: 15rem;
+  top: 15rem;
+  left: 10rem;
+}
+
+.header-cont {
+  height: 2rem;
+ 
+}
+
+.header-cont > * {
+  height: 1.3rem;
+  width: 1.3rem;
+
+}
 }
